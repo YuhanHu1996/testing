@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Git & GitHub
 
 https://learn.microsoft.com/en-us/training/modules/intro-to-git/2-exercise-configure-git
@@ -56,4 +57,64 @@ Your changes won't update on the default branch until you merge your branch.
 pull request
 A pull request is the mechanism used to signal that the commits from one branch are ready to be merged into another branch.
 
+=======
+Git & GitHub
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-git/2-exercise-configure-git
+
+# to double-check that Git is installed
+git --version
+
+# To configure Git, you must define some global variables: user.name and user.email. Both are required for you to make commits.
+# set name in Cloud Shell
+git config --global user.name "<USER_NAME>"
+# create user.email configuration variable
+git config --global user.email "<USER_EMAIL>"
+
+# Git works by checking for changes to files within a certain folder
+# create an empty folder (aka the project directory)
+mkdir Cats
+# change to the project directory
+cd Cats
+# initialize a Git repository into the folder
+# set the name of the default branch to main
+git init --initial-branch=main
+git init -b main
+
+# show the status of the working tree
+git status
+
+# show the contents of the working tree
+ls -a
+
+# Git help
+git --help
+git <command> --help
+
+# common commands
+git status      # display the state of the working tree and of the staging area
+git add         # start keeping track of the changes in certain files -> staging the changes (prepare for a commit)
+git commit      # put a copy in the repository as a new version
+git commit -m"Add a helpful commit message"
+git log         # see information about previous commits
+
+
+
+GitHub
+https://learn.microsoft.com/en-us/training/modules/introduction-to-github/2-what-is-github
+# GitHub provides an AI-powered developer platform to build, scale, and deliver secure software
+# GitHub is a cloud-based platform that uses Git, a distributed version control system, at its core. 
+# The GitHub platform simplifies the process of collaborating on projects 
+# and provides a website, command-line tools, and overall flow that allows developers and users to work together.
+
+branch
+Branches are an essential part of the GitHub experience. They let you make changes without affecting the default branch.
+Your branch is a safe place to experiment with new features or fixes. 
+If you make a mistake, you can revert your changes or push more changes to fix the mistake. 
+Your changes won't update on the default branch until you merge your branch.
+
+pull request
+A pull request is the mechanism used to signal that the commits from one branch are ready to be merged into another branch.
+
+>>>>>>> dc91eb308c0966b1ff139191ac04d533d45b5abb
 Eexercise on GitHub: https://github.com/skills-dev/introduction-to-github
