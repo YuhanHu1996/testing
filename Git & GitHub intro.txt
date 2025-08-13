@@ -115,5 +115,18 @@ Your changes won't update on the default branch until you merge your branch.
 pull request
 A pull request is the mechanism used to signal that the commits from one branch are ready to be merged into another branch.
 
->>>>>>> dc91eb308c0966b1ff139191ac04d533d45b5abb
-Eexercise on GitHub: https://github.com/skills-dev/introduction-to-github
+Exercise on GitHub: https://github.com/skills-dev/introduction-to-github
+
+
+===============================================================================================================
+ 
+mkdir my-project			# make directory, create a folder on local computer named my-project
+cd my-project				# change directory into the folder
+touch README.md				# create a new file in the folder named README.md
+git init				# initialize a Git repository locally (the folder is Git-ready)
+git remote add origin <https://github.com/username/my-project.git>	# connect to a GitHub repository
+git add .				# stage all files for commit
+git commit -m "Initial commit"		# commit with a message
+git branch -M main			# push the file to GitHub, main is the name of branch
+git push -u origin main			# "-u" sets origin/main as the default upstream for future pushes
+# after this the files appear on GitHub
